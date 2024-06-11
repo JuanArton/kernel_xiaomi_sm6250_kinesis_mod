@@ -6,16 +6,16 @@ scripts/kconfig/conf  --silentoldconfig Kconfig
   CHK     include/generated/utsrelease.h
   Using .. as source for kernel
   CHK     include/generated/timeconst.h
-  CHK     scripts/mod/devicetable-offsets.h
   CHK     include/generated/bounds.h
   CHK     include/generated/asm-offsets.h
+  CHK     scripts/mod/devicetable-offsets.h
   CALL    ../scripts/checksyscalls.sh
   CHK     include/generated/compile.h
 -- Did you know you can backport path_umount to fs/namespace.c from 5.9?
 -- Read: https://kernelsu.org/guide/how-to-integrate-for-non-gki.html#how-to-backport-path-umount
   CHK     kernel/config_data.h
-  CC      drivers/devfreq/governor_msm_adreno_tz.o
-  AR      drivers/devfreq/built-in.o
+  CC      block/maple-iosched.o
+  AR      block/built-in.o
   DTC     arch/arm64/boot/dts/qcom/cust-atoll-ab.dtb
   DTC     arch/arm64/boot/dts/qcom/curtana-atoll-ab-idp-overlay.dtbo
   DTC     arch/arm64/boot/dts/qcom/excalibur-atoll-ab-idp-overlay.dtbo
@@ -26,7 +26,6 @@ scripts/kconfig/conf  --silentoldconfig Kconfig
   CAT     arch/arm64/boot/dtb.img
 -- Did you know you can backport path_umount to fs/namespace.c from 5.9?
 -- Read: https://kernelsu.org/guide/how-to-integrate-for-non-gki.html#how-to-backport-path-umount
-  AR      drivers/built-in.o
   GEN     .version
   CHK     include/generated/compile.h
   UPD     include/generated/compile.h
